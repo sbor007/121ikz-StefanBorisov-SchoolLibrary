@@ -1,0 +1,16 @@
+﻿@model SchoolLibrary.Models.Reader
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">@Model.FullName</h5>
+        <h6 class="card-subtitle mb-2 text-muted">@Model.Email</h6>
+
+        <p class="card-text">
+            Клас / Група: @Model.ClassName
+        </p>
+
+        <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-sm btn-primary">Детайли</a>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-sm btn-warning">Редактирай</a>
+        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-sm btn-danger">Изтрий</a>
+    </div>
+</div>

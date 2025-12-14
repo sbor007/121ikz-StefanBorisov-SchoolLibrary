@@ -1,0 +1,15 @@
+﻿@model IEnumerable<SchoolLibrary.Models.Book>
+@{
+    ViewData["Title"] = "Книги";
+}
+
+<h1>Книги</h1>
+
+<p>
+    <a class="btn btn-success" asp-action="Create">Добави нова книга</a>
+</p>
+
+@foreach (var item in Model)
+{
+    @Html.Partial("_BookCard", item)
+}

@@ -1,0 +1,12 @@
+﻿@model SchoolLibrary.Models.Book
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Title</h5>
+        <h6 class="card-subtitle mb-2 text-muted">@Model.Author</h6>
+        <p class="card-text">
+            Жанр: @Model.Genre<br />
+            Година: @Model.PublishedYear
+        </p>
+    </div>
+</div>

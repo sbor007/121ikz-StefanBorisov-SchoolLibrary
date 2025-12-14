@@ -1,0 +1,12 @@
+﻿@model IEnumerable<SchoolLibrary.Models.LibraryEvent>
+
+<h1>Събития</h1>
+
+<p>
+    <a class="btn btn-success" asp-action="Create">Добави събитие</a>
+</p>
+
+@foreach (var ev in Model)
+{
+    @Html.Partial("_EventCard", ev)
+}

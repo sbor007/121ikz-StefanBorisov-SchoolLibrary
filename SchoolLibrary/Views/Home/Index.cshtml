@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Начало";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Училищна библиотека</h1>
+    <p>Добре дошли в уеб приложението за управление на училищната библиотека.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <h3>Книги</h3>
+            <p>Разгледай и управлявай списъка с книги.</p>
+            <a class="btn btn-primary" asp-controller="Books" asp-action="Index">Към книгите</a>
+        </div>
+        <div class="col-md-4">
+            <h3>Читатели</h3>
+            <p>Списък с читатели на библиотеката.</p>
+            <a class="btn btn-primary" asp-controller="Readers" asp-action="Index">Към читателите</a>
+        </div>
+        <div class="col-md-4">
+            <h3>Събития</h3>
+            <p>Информация за библиотечни събития.</p>
+            <a class="btn btn-primary" asp-controller="LibraryEvents" asp-action="Index">Към събитията</a>
+        </div>
+    </div>
+</div>

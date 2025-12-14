@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "За проекта";
+}
+
+<div class="about-page container my-5">
+    <div class="row justify-content-center mb-4">
+        <div class="col-lg-10">
+            <div class="about-hero card shadow-lg border-0">
+                <div class="card-body p-4 p-md-5">
+                    <span class="badge bg-primary-soft mb-3">Курсов проект</span>
+                    <h1 class="display-5 fw-bold mb-3">Училищна библиотека</h1>
+                    <p class="lead mb-0">
+                        Това уеб приложение е разработено като курсов проект по
+                        <strong>„Microsoft WEB технологии“</strong> и представлява система
+                        за управление на училищна библиотека – книги, читатели и събития.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Екип -->
+        <div class="col-lg-4">
+            <div class="about-card card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h3 class="section-title mb-3">Екип</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li><strong>Име:</strong> Стефан Борисов</li>
+                        <li><strong>Фак. номер:</strong> 121икз</li>
+                        <li><strong>Специалност:</strong> Информационни технологии в индустриална и корпоративна среда (ИТИКС)</li>
+                        <li><strong>Курс:</strong> 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Основни функции -->
+        <div class="col-lg-4">
+            <div class="about-card card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h3 class="section-title mb-3">Основни функции</h3>
+                    <ul class="list-unstyled about-list">
+                        <li>
+                            <span class="bullet-dot"></span>
+                            Управление на <strong>книги</strong> – създаване, редакция, изтриване и детайлен преглед (пълна CRUD функционалност).
+                        </li>
+                        <li>
+                            <span class="bullet-dot"></span>
+                            Поддръжка на списък с <strong>читатели</strong> – добавяне, редактиране и изтриване на записи.
+                        </li>
+                        <li>
+                            <span class="bullet-dot"></span>
+                            Управление на <strong>библиотечни събития</strong> (напр. „Седмица на книгата“, представяния, конкурси).
+                        </li>
+                        <li>
+                            <span class="bullet-dot"></span>
+                            Навигационно меню с бърз достъп до основните секции на приложението.
+                        </li>
+                        <li>
+                            <span class="bullet-dot"></span>
+                            Валидация на данните чрез <strong>Data Annotations</strong> в моделите и показване на съобщения за грешка във формите.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Използвани технологии -->
+        <div class="col-lg-4">
+            <div class="about-card card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h3 class="section-title mb-3">Използвани технологии</h3>
+                    <ul class="list-unstyled mb-3">
+                        <li>
+                            <span class="tech-badge">ASP.NET Core MVC (.NET 8)</span>
+                            – реализиране на модел–изглед–контролер архитектура.
+                        </li>
+                        <li>
+                            <span class="tech-badge">Entity Framework Core</span>
+                            – работа с база данни чрез ORM.
+                        </li>
+                        <li>
+                            <span class="tech-badge">SQLite</span>
+                            – лека релационна SQL база данни, съхранявана в локален файл.
+                        </li>
+                        <li>
+                            <span class="tech-badge">Razor изгледи</span>
+                            – динамични страници с C# и HTML.
+                        </li>
+                        <li>
+                            <span class="tech-badge">Bootstrap 5</span>
+                            – responsive интерфейс, навигация и готови компоненти.
+                        </li>
+                    </ul>
+
+                    <p class="small text-muted mb-0">
+                        Приложението използва <strong>Layout</strong>, <strong>Partial Views</strong> и
+                        <strong>Section</strong> за изграждане на общ дизайн и многократна употреба на компоненти.
+                        Данните се достъпват чрез <strong>Entity Framework Core</strong>, а миграциите се използват
+                        за създаване и актуализиране на базата.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

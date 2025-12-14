@@ -1,0 +1,12 @@
+﻿@model IEnumerable<SchoolLibrary.Models.Reader>
+
+<h1>Читатели</h1>
+
+<p>
+    <a class="btn btn-success" asp-action="Create">Добави читател</a>
+</p>
+
+@foreach (var reader in Model)
+{
+    @Html.Partial("_ReaderCard", reader)
+}
